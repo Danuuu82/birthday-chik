@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Envelope</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="birthday-header">
+    SEMOGA BAHAGIA DI USIA BARU MU
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="envelope" id="envelope">
+      <div class="back"></div>
+      <div class="left-flap"></div>
+      <div class="right-flap"></div>
+      <div class="bottom-flap"></div>
+      <div class="top-flap" id="flap"></div>
+
+      <!-- Isi surat -->
+      <div class="letter" id="letter">
+        <p>
+          <strong>Happy birthday princess,</strong><br>
+          ciee udah 19 tahun,<br>
+          semoga panjang umur sehat dan cantik selalu<br>
+          kembaran Nana Do Hyun Jin
+        </p>
+      </div>
+    </div>
+
+    <!-- Tombol -->
+    <div class="buttons">
+      <button onclick="openEnvelope()">Open Envelope</button>
+      <button onclick="closeEnvelope()">Close Envelope</button>
+    </div>
+  </div>
+
+  <!-- Balon -->
+  <div class="balloons-container" id="balloons-container"></div>
+
+  <!-- Musik -->
+  <audio id="bgMusic" src="die_with_a_smile.mp3"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
