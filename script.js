@@ -119,3 +119,7 @@ function getSize(size) {
   return '24px';
 }
 
+function goToChikacu() {
+  window.location.href = "koleksi.html";
+}
+

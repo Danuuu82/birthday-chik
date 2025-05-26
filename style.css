@@ -251,3 +251,26 @@ body {
   0% { transform: translate(50%, 50%) scale(0); opacity: 1; }
   100% { transform: translate(-50px, -50px) scale(1.5); opacity: 0; }
 }
+
+.buttonsk {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttonsk button {
+  background: #ff6fa4;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.buttonsk button:hover {
+  background: #ff4f87;
+}

@@ -1,0 +1,107 @@
+body {
+  background-color: #fff1f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Judul */
+.birthday-header {
+  background-color: #ff80b3;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: fit-content;
+  box-shadow: 0 8px 15px rgba(255, 128, 179, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Kartu Foto */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-body {
+  background-color: #ffe4ec;
+  padding: 1rem;
+}
+
+/* Carousel */
+.carousel-inner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  max-width: 80%;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Carousel Controls (Panah) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff69b4;
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 60% 60%;
+}
+
+/* Balon */
+.balloon {
+  position: fixed;
+  bottom: 0;
+  width: 40px;
+  height: 60px;
+  border-radius: 50% 50% 50% 50%;
+  opacity: 0.8;
+  animation: floatUp 6s linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+}
